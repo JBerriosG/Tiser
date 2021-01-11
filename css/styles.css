@@ -54,7 +54,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+article, aside, figcaption, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
@@ -492,9 +492,17 @@ mark,
   display: inline-block;
 }
 
+@media (max-width: 991px) {
+  .figure{
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .figure-img {
   margin-bottom: 0.5rem;
   line-height: 1;
+  max-width: 20%;
 }
 
 .figure-caption {
@@ -10056,6 +10064,7 @@ h3 {
   padding-bottom: 1rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
+  display: flex;
 }
 #mainNav .navbar-brand {
   color: #fff;
@@ -10078,6 +10087,7 @@ h3 {
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.8rem;
+  flex: auto;
 }
 
 @media (min-width: 992px) {
@@ -10089,6 +10099,7 @@ h3 {
   #mainNav .navbar-brand {
     font-size: 1.75em;
     transition: font-size 0.3s;
+    
   }
   #mainNav .navbar-nav {
     margin-top: 0;
