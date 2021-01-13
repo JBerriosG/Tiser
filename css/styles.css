@@ -492,22 +492,26 @@ mark,
   display: inline-block;
 }
 
-@media (max-width: 991px) {
-  .figure{
-    display: flex;
-    justify-content: center;
-  }
-}
-
 .figure-img {
   margin-bottom: 0.5rem;
-  line-height: 1;
-  max-width: 20%;
 }
 
 .figure-caption {
   font-size: 90%;
   color: #6c757d;
+}
+
+.logo{
+  width: 300px;
+}
+@media (max-width: 991px) {
+  .logo{
+    width: 200px;
+  }
+  nav.navbar div.container {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 code {
