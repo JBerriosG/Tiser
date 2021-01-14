@@ -395,6 +395,13 @@ h6, .h6 {
   font-weight: 300;
 }
 
+.leadfoot {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .display-1 {
   font-size: 6rem;
   font-weight: 300;
@@ -437,7 +444,7 @@ small,
 }
 
 .zoom:hover {
-  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.2); /* (120% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 mark,
@@ -10250,11 +10257,14 @@ form .row:first-child .floating-label-form-group {
 }
 
 .footer {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   background-color: #2c3e50;
   color: #fff;
 }
+
+.esp-h2 {
+margin-bottom: 5rem;
 
 .copyright {
   background-color: #1a252f;
