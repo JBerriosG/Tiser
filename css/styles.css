@@ -5376,18 +5376,30 @@ a.close.disabled {
 header {
   position: relative;
   background-color: black;
-  height: 75vh;
+  height: 100%;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
 }
 
-header video {
+@media (max-width: 1000px){
+  header{
+    display: flex;
+    width: auto;
+  }
+  header .carousel{
+    top: 3.5rem;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+#index-head video {
   position: absolute;
   top: 50%;
   left: 50%;
   min-width: 100%;
-  min-height: 100%;
+  min-height: auto;
   width: auto;
   height: auto;
   z-index: 0;
@@ -5413,14 +5425,15 @@ header .overlay {
   z-index: 1;
 }
 
-@media (pointer: coarse) and (hover: none) {
-  header {
+/* @media (pointer: coarse) and (hover: none) {
+  #index-head {
     background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
   }
-  header video {
+  #index-head video {
     display: none;
+    height: auto;
   }
-}
+} */
 
 .toast-header {
   display: flex;
